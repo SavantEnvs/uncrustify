@@ -1,0 +1,7 @@
+project: savantenvs/uncrustify
+target: uncrustify_config
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/uncrustify_config/testsuite
+cmds:
+  - cmd: /mayhem/uncrustify_config @@
